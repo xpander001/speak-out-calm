@@ -11,7 +11,7 @@ function Dashboard(props) {
     <section id="dashboard">
       <div className="fluid-container">
         <div className="row dashboard-row">
-          <aside className="col-md-5 dashboard-sidebar padding--md">
+          <aside className="col-sm-5 dashboard-sidebar padding--md">
             <div className="row padding--md">
               <h2 className="text--white margin--vertical-xs">1. CHOOSE YOUR TEXT</h2>
               <TextCardList
@@ -29,7 +29,7 @@ function Dashboard(props) {
                 />
             </div>
           </aside>
-          <main className="col-md-7 canvas-container">
+          <main className="col-sm-7 canvas-container">
             <CanvasElement title={props.selectedTitle} text={props.selectedText} color={props.selectedColor} />
           </main>
         </div>
