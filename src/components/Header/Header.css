@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header__image {
+  margin-left: 2rem;
+}
+.header__ul {
+  list-style: none;
+  color: white;
+  margin-top: 1.5rem;
+}
+
+.header__li {
+  display: inline;
+  margin: 1rem 0.4rem;
+}
