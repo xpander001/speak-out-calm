@@ -11,7 +11,7 @@ class CanvasElement extends React.Component {
     this.updateCanvas();
   }
   componentDidUpdate() {
-      this.updateCanvas();
+    this.updateCanvas();
   }
   updateCanvas() {
     var imageObj = new Image();
@@ -24,9 +24,9 @@ class CanvasElement extends React.Component {
       ctx.fillStyle = color;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       ctx.fillStyle = 'white';
-      ctx.font="36px Verdana";
+      ctx.font="26px Verdana";
       ctx.fillText(title, canvas.width / 2, 120);
-      ctx.font="24px Verdana";
+      ctx.font="18px Verdana";
       ctx.fillText(text, canvas.width / 2,180);
       ctx.drawImage(imageObj, 10, 0);
     };

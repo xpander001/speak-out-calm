@@ -5,7 +5,7 @@
   text-align: center;
   padding: 2rem 0rem;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .TextCard__Title {
@@ -14,4 +14,8 @@
 
 .TextCard--selected {
   background-color: #F8F100;
+}
+
+.TextCard__Text {
+
 }
