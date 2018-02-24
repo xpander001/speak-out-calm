@@ -1,10 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import LandingCard from '../../components/LandingCard/LandingCard';
-
+import LandingCard from "../../components/LandingCard/LandingCard";
 
 class Landing extends React.Component {
-  state = {  }
+  state = {};
   render() {
     return (
       <section id="landing">
