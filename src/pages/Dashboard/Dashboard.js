@@ -2,6 +2,7 @@ import React from 'react';
 
 import TextCardList from '../../components/TextCardList/TextCardList';
 import ColorList from '../../components/ColorList/ColorList';
+import CanvasElement from '../../components/CanvasElement/CanvasElement';
 
 import data from '../../data/data.json';
 
@@ -54,7 +55,7 @@ class Dashboard extends React.Component {
               </div>
             </aside>
             <main className="col-md-7">
-              <p>content</p>
+              <CanvasElement title={this.state.selectedTitle} text={this.state.selectedText} color={this.state.selectedColor} />
             </main>
           </div>
         </div>
