@@ -1,13 +1,17 @@
 .TextCard {
   margin: .5rem;
-  background-color: black;
+  background-color: #FF4B00;
   color: white;
   text-align: center;
   padding: 2rem 0rem;
   cursor: pointer;
-  border: 1px solid white;
+  font-size: 14px;
+}
+
+.TextCard__Title {
+  font-weight: bold;
 }
 
 .TextCard--selected {
-  border: 1px solid red;
+  background-color: #F8F100;
 }
