@@ -1,3 +1,6 @@
+canvas {
+  box-shadow: 10px 14px 30px rgba(0, 0, 0, 0.35); }
+
 .canvas-container {
   height: 100%;
   display: flex;
