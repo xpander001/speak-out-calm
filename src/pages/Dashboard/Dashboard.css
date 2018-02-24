@@ -1,9 +1,7 @@
-#dashboard {
+#dashboard .fluid-container {
   height: 100%; }
-  #dashboard .fluid-container {
+  #dashboard .fluid-container .dashboard-row {
     height: 100%; }
-    #dashboard .fluid-container .dashboard-row {
+    #dashboard .fluid-container .dashboard-row .dashboard-sidebar {
+      background: #002864;
       height: 100%; }
-      #dashboard .fluid-container .dashboard-row .dashboard-sidebar {
-        background: #002864;
-        height: 100%; }
