@@ -1,0 +1,6 @@
+.landing-container {
+  padding: 1rem; }
+  .landing-container__title {
+    background-color: red;
+    display: block;
+    width: 100%; }

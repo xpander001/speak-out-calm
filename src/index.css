@@ -62,14 +62,14 @@
   color: #222; }
 
 .background--boundless-blue {
-  background: #B9F9FF;
-  border: 1px solid #a0f7ff;
+  background: #3FC8E0;
+  border: 1px solid #29c2dc;
   border-radius: 2px;
   color: #222; }
 
 .background--boundless-dark-blue {
-  background: #7FD5E0;
-  border: 1px solid #6acedb;
+  background: #002864;
+  border: 1px solid #001e4b;
   border-radius: 2px;
   color: #fff; }
 
@@ -134,8 +134,8 @@
   color: #222; }
 
 .background--interview {
-  background: #7FD5E0;
-  border: 1px solid #6acedb;
+  background: #002864;
+  border: 1px solid #001e4b;
   border-radius: 2px;
   color: #fff; }
 
@@ -182,8 +182,8 @@
   color: #fff; }
 
 .background--fiction {
-  background: #7FD5E0;
-  border: 1px solid #6acedb;
+  background: #002864;
+  border: 1px solid #001e4b;
   border-radius: 2px;
   color: #fff; }
 
@@ -1382,10 +1382,10 @@ body {
   letter-spacing: 0.05em; }
 
 .text--boundless-blue {
-  color: #B9F9FF; }
+  color: #3FC8E0; }
 
 .text--boundless-dark-blue {
-  color: #7FD5E0; }
+  color: #002864; }
 
 .text--boundless-violet {
   color: #C49DF9; }
@@ -1543,11 +1543,11 @@ blockquote {
   padding-bottom: 8px; }
 
 .underline--boundless-blue {
-  border-bottom: 2px solid #B9F9FF;
+  border-bottom: 2px solid #3FC8E0;
   padding-bottom: 8px; }
 
 .underline--boundless-dark-blue {
-  border-bottom: 2px solid #7FD5E0;
+  border-bottom: 2px solid #002864;
   padding-bottom: 8px; }
 
 .underline--boundless-violet {
@@ -2902,3 +2902,8 @@ html body {
 
 html.wf-loading body {
   opacity: 0; }
+
+.button {
+  padding: 0.3em 0.6em;
+  background-color: black;
+  border: 1px solid black; }
