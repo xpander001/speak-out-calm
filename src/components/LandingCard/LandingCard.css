@@ -1,6 +1,17 @@
 .landing-container {
-  padding: 1rem; }
-  .landing-container__title {
-    background-color: red;
-    display: block;
-    width: 100%; }
+  padding: 1rem;
+}
+.landing-container__title {
+  background-color: red;
+  display: block;
+  width: 100%;
+}
+.landing-container__text {
+  margin: 2rem 0;
+}
+.landing-container__button {
+  background-color: #002864;
+  padding: 0.5rem;
+  color: yellow;
+  font-family: "Open sans";
+}

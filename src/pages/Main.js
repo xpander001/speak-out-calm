@@ -1,8 +1,7 @@
 import React from "react";
 
 import { BrowserRouter, Route } from "react-router-dom";
-
-import Header from "../components/Header/Header";
+import "./Main.css";
 import Landing from "../pages/Landing/Landing";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import Review from "../pages/Review/Review";
@@ -16,8 +15,7 @@ class Main extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <div id="main">
-          <Header />
+        <div id="main" className="main">
           <Route exact path="/" component={Landing} />
           <Route path="/dashboard" component={Dashboard} />
           <Route path="/review" component={Review} />

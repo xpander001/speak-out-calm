@@ -10,8 +10,12 @@ class Heading extends React.Component {
         <ul className="header__ul">
           <li className="header__li">
             Social share:
-            <i className="fab fa-twitter" />
-            <i className="fab fa-facebook-f" />
+            <a href="https://twitter.com/theCALMzone">
+              <i className="fab fa-twitter" />
+            </a>
+            <a href="https://www.facebook.com/theCALMzone">
+              <i className="fab fa-facebook-f" />
+            </a>
           </li>
         </ul>
       </header>
