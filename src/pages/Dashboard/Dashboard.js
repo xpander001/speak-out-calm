@@ -4,27 +4,24 @@ import TextCardList from '../../components/TextCardList/TextCardList';
 import ColorList from '../../components/ColorList/ColorList';
 import CanvasElement from '../../components/CanvasElement/CanvasElement';
 
-function Dahsboard(props) {
+import "./Dashboard.css";
+
+function Dashboard(props) {
   return (
     <section id="dashboard">
-      <div className="container">
-        <div className="row">
-          <h1 className="col-xs-12">Dashboard</h1>
-        </div>
-      </div>
-      <div className="container">
-        <div className="row">
-          <aside className="col-md-5">
-            <div className="row">
-              <h2>Choose your statement</h2>
+      <div className="fluid-container">
+        <div className="row dashboard-row">
+          <aside className="col-md-5 dashboard-sidebar padding--md">
+            <div className="row padding--md">
+              <h2 className="text--white margin--vertical-xs">1. CHOOSE YOUR TEXT</h2>
               <TextCardList
                 messages={props.data.messages}
                 onTextSelected={props.onTextSelected}
                 selectedText={props.selectedText}
                 />
             </div>
-            <div className="row">
-              <h2>Colors</h2>
+            <div className="row padding--md">
+              <h2 className="text--white margin--vertical-xs">2. CHOOSE YOUR COLOUR</h2>
               <ColorList
                 colors={props.data.colors}
                 onColorSelected={props.onColorSelected}
@@ -32,7 +29,7 @@ function Dahsboard(props) {
                 />
             </div>
           </aside>
-          <main className="col-md-7">
+          <main className="col-md-7 canvas-container">
             <CanvasElement title={props.selectedTitle} text={props.selectedText} color={props.selectedColor} />
           </main>
         </div>
@@ -41,4 +38,4 @@ function Dahsboard(props) {
   );
 }
 
-export default Dahsboard;
+export default Dashboard;
