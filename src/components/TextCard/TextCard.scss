@@ -1,0 +1,13 @@
+.TextCard {
+  margin: .5rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 2rem 0rem;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.TextCard--selected {
+  border: 1px solid red;
+}

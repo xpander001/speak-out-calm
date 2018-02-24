@@ -8,7 +8,6 @@ function ColorElement({color, onColorSelected, selectedColor}) {
     style={
       {backgroundColor: color}
     }
-    className="ColorElement"
     className={(selectedColor === color ? 'ColorElement ColorElement--selected' : 'ColorElement')}
     onClick={() => onColorSelected(color)}></span>
 }
