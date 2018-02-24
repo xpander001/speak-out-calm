@@ -1,0 +1,81 @@
+$spacing-sizes: (xxs: 0.25rem, xs: 0.5rem, sm: 1rem, md: 2rem, lg: 4rem, xl: 8rem, xxl: 16rem);
+
+@each $size, $value in $spacing-sizes {
+  .gap--#{$size} {
+    > * + * {
+      margin-top: $value;
+    }
+  }
+
+  .padding--#{$size} {
+    padding: $value;
+  }
+  .padding--vertical-#{$size} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+  .padding--top-#{$size} {
+    padding-top: $value;
+  }
+  .padding--sides-#{$size} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+  .margin--#{$size} {
+    margin: $value;
+  }
+  .margin--vertical-#{$size} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+  .margin--top-#{$size} {
+    margin-top: $value;
+  }
+  .margin--sides-#{$size} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+}
+
+@each $breakpoint, $var in $breakpoints {
+  @media #{$var} {
+    @each $size, $value in $spacing-sizes {
+      .gap--#{$size}-at-#{$breakpoint} {
+        > * + * { margin-top: $value; }
+      }
+      .gap--none-at-#{$breakpoint} {
+        > * + * { margin-top: 0; }
+      }
+      .padding--top-#{$size}-at-#{$breakpoint} {
+        padding-top: $value;
+      }
+      .padding--#{$size}-at-#{$breakpoint} {
+        padding: $value;
+      }
+      .padding--vertical-#{$size}-at-#{$breakpoint} {
+        padding-top: $value;
+        padding-bottom: $value;
+      }
+      .padding--none-at-#{$breakpoint} {
+        padding: 0;
+      }
+      .margin--top-#{$size}-at-#{$breakpoint} {
+        margin-top: $value;
+      }
+      .margin--#{$size}-at-#{$breakpoint} {
+        margin: $value;
+      }
+      .margin--vertical-#{$size}-at-#{$breakpoint} {
+        margin-top: $value;
+        margin-bottom: $value;
+      }
+      .margin--none-at-#{$breakpoint} {
+        margin: 0;
+      }
+      .margin--sides-#{$size}-at-#{$breakpoint} {
+        margin-left: $value;
+        margin-right: $value;
+      }
+    }
+  }
+}

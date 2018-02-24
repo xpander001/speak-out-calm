@@ -1,0 +1,10 @@
+$breakpoint-xs                 : "(max-width: 767px)";
+$breakpoint-sm                 : "(min-width: 768px) and (max-width: 991px)";
+$breakpoint-md                 : "(min-width: 992px) and (max-width: 1199px)";
+$breakpoint-lg                 : "(min-width: 1200px)";
+$breakpoint-xs-sm              : "(max-width: 991px)";
+$breakpoint-sm-lg              : "(min-width: 768px)";
+$breakpoint-md-lg              : "(min-width: 992px)";
+
+$breakpoints: (xs: $breakpoint-xs, sm: $breakpoint-sm,
+               md: $breakpoint-md, lg: $breakpoint-lg);

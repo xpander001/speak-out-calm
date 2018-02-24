@@ -1,0 +1,51 @@
+
+$background-positions: (top-left: top left,
+                        top-center: top center,
+                        top-right: top right,
+                        center-left: center left,
+                        center: center,
+                        center-right: center right,
+                        bottom-left: bottom left,
+                        bottom-center: bottom center,
+                        bottom-right: bottom right);
+
+@each $color, $value in getColors(shades, boundless, categories) {
+  .background--#{"" + $color} {
+    background: $value;
+    border: 1px solid darken($value, 5%);
+    border-radius: 2px;
+    @if map-has-key(getColors(boundless-light, shades-light), $color) {
+      color: #222;
+    } @else {
+      color: #fff;
+    }
+  }
+}
+
+.background--no-border {
+  border: none;
+  border-radius: 0;
+}
+
+@each $position, $value in $background-positions {
+  .background--image-#{$position} {
+    background-position: $value;
+    background-repeat: no-repeat;
+  }
+}
+
+.background--image-cover {
+  background-size: cover;
+}
+
+.background--image-contain {
+  background-size: contain;
+}
+
+.background--image-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.background--image-repeat {
+  background-repeat: repeat;
+}

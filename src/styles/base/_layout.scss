@@ -1,0 +1,130 @@
+$align-left: left;
+$align-right: right;
+$align-center: center;
+
+
+$alignment        : (left: $align-left, right: $align-right, center: $align-center);
+
+
+.layout--clearfix {
+  @include clearfix();
+}
+
+.layout--pull-left {
+  float: left;
+}
+
+.layout--pull-right {
+  float: right;
+}
+
+.layout--inline-block {
+  display: inline-block;
+}
+
+.layout--block {
+  display: block;
+}
+
+.layout--inline {
+  display: inline;
+}
+
+.layout--table {
+  display: table;
+  width: 100%;
+  > * {
+    display: table-cell;
+  }
+}
+.layout--nowrap {
+  > * {
+    white-space: nowrap;
+  }
+}
+.layout--align-top {
+  vertical-align: top;
+}
+.layout--align-middle {
+  vertical-align: middle;
+}
+.layout--align-bottom {
+  vertical-align: bottom;
+}
+.layout--align-left {
+  text-align: left;
+}
+.layout--align-center {
+  text-align: center;
+}
+.layout--align-right {
+  text-align: right;
+}
+@each $breakpoint, $var in $breakpoints {
+  @media #{$var} {
+    @each $alignment, $value in $alignment {
+      .text--#{$alignment}-at-#{$breakpoint} {
+        text-align: $value;
+      }
+    }
+  }
+}
+
+.layout--flex {
+  display: flex;
+  &.layout--flex-expand {
+    > * {
+      flex: 1;
+    }
+  }
+  &.layout--flex-collapse-at-xs {
+    @media #{$breakpoint-xs} {
+      display: block;
+    }
+  }
+  &.layout--align-top {
+    align-items: flex-start;
+  }
+  &.layout--align-middle {
+    align-items: center;
+  }
+  &.layout--align-bottom {
+    align-items: flex-end;
+  }
+  &.layout--align-left {
+    justify-content: flex-start;
+  }
+  &.layout--align-center {
+    justify-content: center;
+  }
+  &.layout--align-right {
+    justify-content: flex-end;
+  }
+  &.layout--flex-column {
+    flex-direction: column;
+    &.layout--align-top {
+      justify-content: flex-start;
+    }
+    &.layout--align-middle {
+      align-items: initial;
+      justify-content: center;
+    }
+    &.layout--align-bottom {
+      justify-content: flex-end;
+    }
+    &.layout--align-left {
+      align-items: flex-start;
+    }
+    &.layout--align-center {
+      align-items: center;
+      justify-content: initial;
+    }
+    &.layout--align-right {
+      align-items: flex-end;
+    }
+    &.layout--align-middle.layout--align-center {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+/****************
+ * COLORS: Shades
+ ****************/
+
+$color-black                : #000;
+$color-dark-grey            : #222;
+$color-mid-grey             : #444;
+$color-grey                 : #666;
+$color-light-grey           : #999;
+$color-mid-white            : #e7e7e7;
+$color-off-white            : #f7f7f7;
+$color-white                : #fff;
+
+$colors-shades-dark         : (black: $color-black,
+                               dark-grey: $color-dark-grey,
+                               mid-grey: $color-mid-grey,
+                               grey: $color-grey,
+);
+
+$colors-shades-light        : (light-grey: $color-light-grey,
+                               mid-white: $color-mid-white,
+                               off-white: $color-off-white,
+                               white: $color-white
+);
+
+$colors-shades: map-merge($colors-shades-dark, $colors-shades-light);
+
+/****************
+* COLORS: Text
+****************/
+
+$color-text                 : $color-mid-grey;
+$color-text-heading         : $color-dark-grey;
+$color-text-subtle          : $color-light-grey;
+
+/****************
+* COLORS: UI
+****************/
+
+$color-success              : #6b9e39;
+$color-warning              : #da7b3d;
+$color-error                : #d84545;
+$color-info                 : #429bc0;
+
+$colors-ui                  : (success: $color-success,
+                               warning: $color-warning,
+                               error: $color-error,
+                               info: $color-info
+);
+
+/*******************
+* COLORS: Boundless
+********************/
+$color-boundless-blue           : #B9F9FF;
+$color-boundless-dark-blue      : #7FD5E0;
+$color-boundless-violet         : #C49DF9;
+$color-boundless-green          : #02C39A;
+$color-boundless-pink           : #EC68A3;
+$color-boundless-orange         : #F3B042;
+$color-boundless-theme          : #0098C6;
+$color-boundless-black          : #000000;
+$color-boundless-gray           : #E0E0E0;
+$color-boundless-light-gray     : #F2F2F2;
+$color-boundless-text-gray      : #BDBDBD;
+$color-boundless-white          : #FFFFFF;
+
+$colors-boundless: (boundless-blue: $color-boundless-blue,
+                    boundless-dark-blue: $color-boundless-dark-blue,
+                    boundless-violet: $color-boundless-violet,
+                    boundless-pink: $color-boundless-pink,
+                    boundless-orange: $color-boundless-orange,
+                    boundless-theme: $color-boundless-theme,
+                    boundless-black: $color-boundless-black,
+                    boundless-green: $color-boundless-green,
+                    boundless-gray: $color-boundless-gray,
+                    boundless-light-gray: $color-boundless-light-gray,
+                    boundless-text-gray: $color-boundless-text-gray,
+                    boundless-white: $color-boundless-white
+);
+
+$colors-categories: (
+  interview: $color-boundless-dark-blue,
+  review: $color-boundless-green,
+  extract: $color-boundless-violet,
+  shelfie: $color-boundless-violet,
+  essay: $color-boundless-pink,
+  qa: $color-boundless-pink,
+  feature: $color-boundless-orange,
+  backlisted: $color-boundless-orange,
+  fiction: $color-boundless-dark-blue,
+  book-of-a-lifetime: $color-boundless-green
+);
+
+$colors-boundless-light: (boundless-blue: $color-boundless-blue,
+  boundless-light-gray: $color-boundless-light-gray,
+  boundless-text-gray: $color-boundless-text-gray,
+  boundless-white: $color-boundless-white
+);
+
+/****************
+* COLORS: Map
+****************/
+
+$colors : (
+  shades: $colors-shades,
+  shades-light: $colors-shades,
+  shades-dark: $colors-shades,
+  boundless: $colors-boundless,
+  boundless-light: $colors-boundless-light,
+  categories: $colors-categories
+);
+
+

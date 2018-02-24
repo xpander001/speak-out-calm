@@ -1,0 +1,36 @@
+{
+  "name": "Ander",
+  "messages": [
+    {
+      "text": "this is my example 1",
+      "hashtags": [
+        "hashtag11",
+        "hashtag12",
+        "hashtag13"
+      ]
+    },
+    {
+      "text": "this is my example 2",
+      "hashtags": [
+        "hashtag21",
+        "hashtag22",
+        "hashtag23"
+      ]
+    },
+    {
+      "text": "this is my example 3",
+      "hashtags": [
+        "hashtag31",
+        "hashtag32",
+        "hashtag33"
+      ]
+    }
+  ],
+  "colors": [
+    "#822E81",
+    "#AA6373",
+    "#F0F2A6",
+    "#392061",
+    "#1A1B25"
+  ]
+}
