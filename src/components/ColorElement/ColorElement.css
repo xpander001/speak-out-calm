@@ -1,0 +1,9 @@
+.ColorElement {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  border: 1px solid white; }
+
+.ColorElement--selected {
+  border: 1px solid red; }
