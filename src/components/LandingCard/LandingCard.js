@@ -5,7 +5,7 @@ class LandingCard extends React.Component {
     return (
       <div className="landing-container background--boundless-blue col-md-8 col-md-offset-2 margin--vertical-xl text--white text--center padding--md gap--md"> 
         <h1 className="text--xl landing-container__title">Share Your Man Feelings</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quisquam illo sequi, perspiciatis rem asperiores quae voluptatum laudantium natus consequatur, qui in enim ducimus at. Voluptatibus, ipsum reiciendis? Animi, labore!</p>
+        <p>Humour can be used to mask the truth as well as get to the heart of it. Create your own postcard to share with friends and finally break the stigma against mental health especially among men. </p>
         <p><a href="/dashboard" className="button">Create Postcard</a></p>
       </div>
     )
