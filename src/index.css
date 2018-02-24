@@ -2904,6 +2904,7 @@ html.wf-loading body {
   opacity: 0; }
 
 .button {
-  padding: 0.3em 0.6em;
-  background-color: black;
-  border: 1px solid black; }
+  padding: 0.6em 0.8em;
+  background-color: #002864;
+  text-decoration: none;
+  color: #F8F100; }
