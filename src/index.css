@@ -2908,3 +2908,6 @@ html.wf-loading body {
   background-color: #002864;
   text-decoration: none;
   color: #F8F100; }
+
+#main {
+  height: 100vh; }
