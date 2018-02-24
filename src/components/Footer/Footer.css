@@ -1,7 +1,5 @@
 .footer {
   background-color: #f8f100;
-  position: absolute;
-  bottom: 0;
   width: 100%; }
 
 .footer__content {
@@ -34,3 +32,6 @@
 .fa-twitter {
   margin-right: 0.5rem;
   margin-left: 0.5rem; }
+
+a {
+  text-decoration: none; }
