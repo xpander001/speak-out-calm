@@ -1,10 +1,17 @@
 .header {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.header__image {
+  margin-left: 1rem;
 }
 .header__ul {
   list-style: none;
   color: white;
+  margin-top: 1.5rem;
 }
 .header__li {
   display: inline;

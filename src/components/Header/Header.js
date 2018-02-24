@@ -8,11 +8,9 @@ class Heading extends React.Component {
       <header className="header">
         <img src={logo} className="header__image" />
         <ul className="header__ul">
-          <li className="header__li">Social share: </li>
           <li className="header__li">
+            Social share:
             <i className="fab fa-twitter" />
-          </li>
-          <li className="header__li">
             <i className="fab fa-facebook-f" />
           </li>
         </ul>
